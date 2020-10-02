@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="content" onclick="setBgColor()">
+        Click to set paragraph background color
+    </button>
+    <p>
+        w3resource JavaScript Exercises
+    </p>
+    <p>
+        w2resource PHP Exercises
+    </p>
+    <script>
+        function setBgColor(){
+            dBody = document.getElementsByTagName('body')[0];
+            bodyElm = dBody.getElementsByTagName('p');
+            p1 = bodyElm[0];
+            p1.style.background = "green";
+            p2 = bodyElm[1];
+            p2.style.background = 'red';
+        }
+    </script>
+</body>
+</html>

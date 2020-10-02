@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Options</title>
+</head>
+<body>
+    <div class="colors">
+        <select  id="content">
+            <option>Red</option>
+            <option >Blue</option>
+            <option>Green</option>
+            <option >Yellow</option>
+        </select>
+        <button id="btn" onclick="removecolor()">Select and Remove</button>
+    </div>
+    <script>
+        function removecolor(){
+       var color = document.getElementById('content');
+       color.remove(color.selectedIndex); 
+        }
+    </script>
+</body>
+</html>
